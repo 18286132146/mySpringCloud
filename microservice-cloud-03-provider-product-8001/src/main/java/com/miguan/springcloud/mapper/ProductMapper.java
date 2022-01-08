@@ -11,5 +11,8 @@ public interface ProductMapper {
     Product findById(Long pid);
     @Select("select pid,product_name,db_source from product")
     List<Product>findAll();
+    //test
     boolean addProduct(Product product);
+
+
 }
