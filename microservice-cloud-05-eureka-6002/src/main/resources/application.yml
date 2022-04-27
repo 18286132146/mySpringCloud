@@ -1,0 +1,18 @@
+server:
+  port: 6002 #端口号
+spring:
+  applications:
+    name: microservice-config-eureka
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      #集群版
+      defaultZone: http://eureka6001.com:6001/eureka/
+  server:
+    enable-self-preservation: false #禁用自我保护机制

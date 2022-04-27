@@ -14,9 +14,20 @@ spring:
   driver-class-name: com.mysql.cj.jdbc.Driver
   url: jdbc:mysql://localhost:3306/springcloud_db01?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
   username: root
-  password: 123456
+  password: root
   dbcp2:
    min-idle: 5
    initial-size: 5
    max-total: 5
    max-wait-millis: 150
+
+eureka:
+  client:
+    registerWithEureka: true  #服务注册开关
+    fetchRegistry: true  #服务发现开关
+    serviceUrl:
+      #defaultZone: http://localhost:6001/eureka #注册到哪一个eureka server 服务注册中心
+      defaultZone: http://eureka6001.com:6001/eureka,http://eureka6002.com:6002/eureka #注册到哪一个eureka server 服务注册中心
+  instance:
+    instanceId: ${spring.application.name}:${server.port}
+    prefer-ip-address: true #访问路径就会显示ip地址
