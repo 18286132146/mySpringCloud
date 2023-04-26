@@ -4,4 +4,4 @@ spring:
       name: microservice-config-product #githup上的配置名称，注意没有yml后缀名
       profile: dev  #本次访问的环境配置项
       label: master   #远程分支名
-      uri: http://localhost:5001 #config配置中心地址，通过它获取githup上的配置
+      uri: http://localhost:5001 #config配置中心地址，通过它获取git

@@ -1,6 +1,6 @@
 package com.miguan.springcloud.Service;
 
-import com.miguan.entities.Product;
+import com.miguan.springcloud.entities.Product;
 
 import java.util.List;
 

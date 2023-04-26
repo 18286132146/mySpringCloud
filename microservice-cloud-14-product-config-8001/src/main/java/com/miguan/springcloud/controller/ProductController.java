@@ -1,7 +1,7 @@
 package com.miguan.springcloud.controller;
 
 import com.miguan.springcloud.entities.Product;
-import com.miguan.springcloud.service.ProductService;
+import com.miguan.springcloud.Service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

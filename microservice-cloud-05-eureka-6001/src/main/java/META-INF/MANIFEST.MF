@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: com.miguan.springcloud.EurekaServer_6001
+

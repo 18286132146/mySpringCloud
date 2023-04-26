@@ -1,13 +1,13 @@
 package com.miguan.springcloud.Service.impl;
 
-import com.miguan.entities.Product;
 import com.miguan.springcloud.Service.ProductService;
+import com.miguan.springcloud.entities.Product;
 import com.miguan.springcloud.mapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
+
 @Service
 public class ProductServiceImpl implements ProductService {
     @Autowired

@@ -1,4 +1,4 @@
-package com.miguan.entities;
+package com.miguan.springcloud.entities;
 
 import java.io.Serializable;
 
@@ -16,6 +16,8 @@ public class Product implements Serializable{
     public Product(String productName){
       this.productName=productName;
 
+    };
+    public Product(){
     };
 
     public Long getPid() {
