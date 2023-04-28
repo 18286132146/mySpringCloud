@@ -18,5 +18,34 @@
         </dependency>
     </dependencies>
 
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.3.12.RELEASE</version>
+                <configuration>
+                    <mainClass>com.miguan.springcloud.EurekaServer_6001</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+<!--        <resources>-->
+<!--            <resource>-->
+<!--                <directory>src/main/resources</directory>-->
+<!--                <includes>-->
+<!--                    <include>**/*.yml</include>-->
+<!--                    <include>**/*.properties</include>-->
+<!--                    <include>**/*.xml</include>-->
+<!--                </includes>-->
+<!--                <filtering>false</filtering>-->
+<!--            </resource>-->
+<!--&lt;!&ndash;            <resource>&ndash;&gt;-->
+<!--&lt;!&ndash;                <directory>src/main/webapp</directory>&ndash;&gt;-->
+<!--&lt;!&ndash;                <targetPath>META-INF/resources</targetPath>&ndash;&gt;-->
+<!--&lt;!&ndash;                <includes>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <include>**/**</include>&ndash;&gt;-->
+<!--&lt;!&ndash;                </includes>&ndash;&gt;-->
+<!--&lt;!&ndash;            </resource>&ndash;&gt;-->
+<!--        </resources>-->
+    </build>
 </project>
